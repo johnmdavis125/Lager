@@ -1,13 +1,19 @@
 #!/bin/zsh
-echo ''
-echo ''
-echo ''
+echo -e '\n\n\n\n\n\n\n\n\n'
 genTimestamp() {
         TIMESTAMP=$(date)
     }
 
-echo "Welcome to Lager! What'll it be?" 
+echo "   ---   Welcome to Lager! What'll it be?   ---"
+echo -e "\n" 
+echo "                        |~~~~|__"
+echo "                        | o  |  |"
+echo "                        |   o|__|"
+echo "                        |____|"
+
+echo -e '\n\n'
 read "?'c' to create a new record, 's' to search existing records: " CHOSEN_ACTION
+
 
 if [ '$CHOSEN_ACTION'='c' ]
 then
@@ -21,7 +27,7 @@ then
         echo "$KEY: $VALUE"
     done
     
-    read "?Enter the 2-letter appropriate 2-letter key code: " KEY_CODE
+    read "?Enter the appropriate 2-letter key code: " KEY_CODE
 
     ENTRY_CATEGORY=${CATEGORIES[$KEY_CODE]}
     echo "Selected Category: $ENTRY_CATEGORY"
