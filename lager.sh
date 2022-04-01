@@ -4,12 +4,12 @@ genTimestamp() {
         TIMESTAMP=$(date)
     }
 
-echo "   ---   Welcome to Lager! What'll it be?   ---"
+echo "        ---   Welcome to Lager! What'll it be?   ---"
 echo -e "\n" 
-echo "                        |~~~~|__"
-echo "                        | o  |  |"
-echo "                        |   o|__|"
-echo "                        |____|"
+echo "                             |~~~~|__"
+echo "                             | o  |  |"
+echo "                             |   o|__|"
+echo "                             |____|"
 
 echo -e '\n\n'
 read "?'c' to create a new record, 's' to search existing records: " CHOSEN_ACTION
@@ -18,7 +18,7 @@ read "?'c' to create a new record, 's' to search existing records: " CHOSEN_ACTI
 if [ '$CHOSEN_ACTION'='c' ]
 then
     typeset -A CATEGORIES
-    CATEGORIES=([cp]=code_projects [cc]=coding_course [hh]=holy_hour [wo]=work_out [kp]=KDP [gp]=guitar_practice [ph]=photography_videography [ps]=photoshop [dn]=design [ts]=tee_shirt_business [ct]=compTia [re]=real_estate [dl]=Dev_Log [el]=electronics_PCB [rd]=reading_books) 
+    CATEGORIES=([cp]=Code_Projects [cc]=Coding_Course [hh]=Holy_Hour [wo]=Work_Out [kp]=KDP [gp]=Guitar_Practice [ph]=Photography_Videography [ps]=Photoshop [dn]=Design [ts]=Tee_Shirt_Business [ct]=CompTia [re]=Real_Estate [dl]=Dev_Log [el]=Electronics_PCB [rd]=Reading_Books) 
 
     echo "CREATE NEW RECORD"
     echo "Category Options:"

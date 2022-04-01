@@ -1,0 +1,4 @@
+- Lager is a CLI-based (CLI = Command Line Interface) logging tool enabling a user to execute basic CRUD actions against a persistent database. In this context, it is used to record how the the user is dedicating their time between various study topics. In it's current version, it is a simple zsh script that executes CRUD actions against a local MongoDB deployment on the user's local machine via the MongoDB shell 'scripting mode'. In later sprints, the project will be delivered as an installable package via NPM, execute CRUD actions against a scalable cloud-based MongoDB instance, and will also include tools for real-time data visualization (details to be revealed later).
+
+
+- If you wish to run this script on your machine, reference the MongoDB setup detailed in the the 'Foundations' March 22 edition of my DevLog at gapyeartech.blog/devlog/foundations. See the 'Code Project Deep Dive' section.   
